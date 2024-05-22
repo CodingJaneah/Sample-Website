@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+            body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*   background-image: url('https://tse4.mm.bing.net/th?id=OIP.pl2o7dOiSV5dkDGMN211EgHaJQ&pid=Api&P=0&h=220');
+    background-size: cover;
+    background-position: center; */
+    }
+
+    nav {
+    background-color: black;
+    padding: 20px;
+    }
+
+    nav a {
+    text-decoration: none;
+    margin: 25px;
+    font-size:x-large;
+    color: white;
+    transition: color .3s;
+    }
+
+    nav a:hover {
+    color: red;  
+    }
+
+    nav, h2, p, li, h1 {
+    text-align: center;
+    }
+
+    form {
+    background-color: lightblue;
+    padding: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    h2 {
+    margin-top: 60px;
+    }
+
+    h1 {
+    text-decoration: underline;
+    font-size: 50px;
+    
+    }
+
+    #p1 {
+    background-color: lightblue;
+    color: black;
+    padding: 15px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-size: x-large;
+    }
+
+    ul li {
+    list-style: none;
+    }
+
+    #cert li {
+        list-style: none;
+    }
+
+    #cert li a {
+        font-size: larger;
+        background: red;
+        padding: 6px; 
+    }
+
+    li a {
+    text-decoration: none;
+    font-size: larger;
+    }
+
+    input, textarea, button {
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 15%;
+    outline: none;
+    }
+
+    input {
+    padding: 10px;
+    width: 70%;
+    }
+
+    button {
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    }
+
+    button:hover {
+    background-color: darkblue;
+    }
+
+    p#footer {
+    margin-top: 50px;
+    color: white;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    }
+
+    #image {
+    margin-left: 40%;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 5px solid lightblue;
+    opacity: 0.8;
+    transition: opacity .5s;
+    }
+
+    #image:hover {
+    opacity: 1.0;
+
+    }
+
+    div img {
+        margin-right: 15px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .skill li {
+        margin-left: 5px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        margin-top: 10%;
+       }
+       
+       footer p {
+        margin-bottom: 0;
+       }
+       
+       footer ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+       }
+       
+       footer li {
+        margin-right: 10px;
+       }
+       
+       footer a {
+        color: #fff;
+       }
+
+       
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    </header>
+    <main>
+      <div class="container">
+        <img src="/images/janee.jpg" alt="urassaya" width="300px;" height="250px" id="image"/>
+        <h1>Mariana Jane Ramos</h1>
+      </div>
+      <section id="about">
+        <h2>About Me</h2>
+        <p id="p1">Hello everyone! I am Mariana Jane Ramos, 21 years old. I am currently practicing to become a web developer.</br>Only the basic of HTML, CSS, and JAVASCRIPT I have known.</p>
+      </section>
+        
+      <section id="cert">
+        <h2>My Certifications</h2>
+        <div>
+        <img src="/images/sql.jpg" width="250px">
+        <img src="/images/py.jpg" width="250px">
+        <img src="/images/html.jpg" width="250px">
+        <img src="/images/js.jpg" width="250px">
+        <img src="/images/webdev.jpg" width="250px">
+        </div>
+
+       <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skill" style="font-size: larger;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+  
+      </section>
+       <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Don't hesitate to message me here... Reach me out.</p>
+         <form>
+         <input type="text" id="name" name="name" placeholder="Name" required/>
+         <input type="email" id="email" name="email" placeholder="Email" required/>
+         <textarea cols=20 rows=5 placeholder="Message me..." required>
+     
+         </textarea>
+         <button>Submit</button>
+         </form>
+      </section>
+    </main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Copyright &copy; 2024 My Website</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="policy.html" class="text-decoration-none text-light">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="term.html" class="text-decoration-none text-light">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+  
